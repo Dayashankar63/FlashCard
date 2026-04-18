@@ -1,0 +1,548 @@
+{
+  "decks": [
+    {
+      "id": "deck1",
+      "name": "General Knowledge",
+      "description": "Basic flashcards for general knowledge.",
+      "userId": "guest",
+      "cards": [
+        {
+          "id": "card1",
+          "question": "What is the capital of France?",
+          "answer": "Paris"
+        },
+        {
+          "id": "card2",
+          "question": "What is 2 + 2?",
+          "answer": "4"
+        },
+        {
+          "id": "57hrzxou",
+          "question": "What is java?",
+          "answer": "java is a concept that helps you understand the essential components of java.",
+          "difficulty": "medium",
+          "tags": [
+            "java"
+          ],
+          "reviewCount": 0,
+          "correctCount": 0,
+          "wrongCount": 0,
+          "attempts": 0,
+          "easeFactor": 2.5,
+          "intervalDays": 1,
+          "nextReview": "2026-04-18T08:13:18.827Z",
+          "lastReviewed": null,
+          "userId": "guest"
+        },
+        {
+          "id": "841qkfvf",
+          "question": "How do you apply java in practice?",
+          "answer": "You apply java by breaking it down into practical steps and testing each part separately.",
+          "difficulty": "hard",
+          "tags": [
+            "java"
+          ],
+          "reviewCount": 0,
+          "correctCount": 0,
+          "wrongCount": 0,
+          "attempts": 0,
+          "easeFactor": 2.5,
+          "intervalDays": 1,
+          "nextReview": "2026-04-18T08:13:18.835Z",
+          "lastReviewed": null,
+          "userId": "guest"
+        },
+        {
+          "id": "bkn52w30",
+          "question": "Why is java important?",
+          "answer": "java is important because it helps you solve problems more efficiently and learn faster.",
+          "difficulty": "easy",
+          "tags": [
+            "java"
+          ],
+          "reviewCount": 0,
+          "correctCount": 0,
+          "wrongCount": 0,
+          "attempts": 0,
+          "easeFactor": 2.5,
+          "intervalDays": 1,
+          "nextReview": "2026-04-18T08:13:18.835Z",
+          "lastReviewed": null,
+          "userId": "guest"
+        },
+        {
+          "id": "xi3a2yfl",
+          "question": "What is python?",
+          "answer": "python is a concept that helps you understand the essential components of python.",
+          "difficulty": "medium",
+          "tags": [
+            "python"
+          ],
+          "reviewCount": 0,
+          "correctCount": 0,
+          "wrongCount": 0,
+          "attempts": 0,
+          "easeFactor": 2.5,
+          "intervalDays": 1,
+          "nextReview": "2026-04-18T08:13:34.967Z",
+          "lastReviewed": null,
+          "userId": "guest"
+        },
+        {
+          "id": "u8v2i7op",
+          "question": "How do you apply python in practice?",
+          "answer": "You apply python by breaking it down into practical steps and testing each part separately.",
+          "difficulty": "hard",
+          "tags": [
+            "python"
+          ],
+          "reviewCount": 0,
+          "correctCount": 0,
+          "wrongCount": 0,
+          "attempts": 0,
+          "easeFactor": 2.5,
+          "intervalDays": 1,
+          "nextReview": "2026-04-18T08:13:34.968Z",
+          "lastReviewed": null,
+          "userId": "guest"
+        },
+        {
+          "id": "l83kfxpv",
+          "question": "Why is python important?",
+          "answer": "python is important because it helps you solve problems more efficiently and learn faster.",
+          "difficulty": "easy",
+          "tags": [
+            "python"
+          ],
+          "reviewCount": 0,
+          "correctCount": 0,
+          "wrongCount": 0,
+          "attempts": 0,
+          "easeFactor": 2.5,
+          "intervalDays": 1,
+          "nextReview": "2026-04-18T08:13:34.968Z",
+          "lastReviewed": null,
+          "userId": "guest"
+        },
+        {
+          "id": "egnrv94d",
+          "question": "What is java?",
+          "answer": "java is a concept that helps you understand the essential components of java.",
+          "difficulty": "medium",
+          "tags": [
+            "java"
+          ],
+          "reviewCount": 0,
+          "correctCount": 0,
+          "wrongCount": 0,
+          "attempts": 0,
+          "easeFactor": 2.5,
+          "intervalDays": 1,
+          "nextReview": "2026-04-18T08:28:23.066Z",
+          "lastReviewed": null,
+          "userId": "guest"
+        },
+        {
+          "id": "z6ner2c7",
+          "question": "How do you apply java in practice?",
+          "answer": "You apply java by breaking it down into practical steps and testing each part separately.",
+          "difficulty": "hard",
+          "tags": [
+            "java"
+          ],
+          "reviewCount": 0,
+          "correctCount": 0,
+          "wrongCount": 0,
+          "attempts": 0,
+          "easeFactor": 2.5,
+          "intervalDays": 1,
+          "nextReview": "2026-04-18T08:28:23.066Z",
+          "lastReviewed": null,
+          "userId": "guest"
+        },
+        {
+          "id": "wqny6gck",
+          "question": "Why is java important?",
+          "answer": "java is important because it helps you solve problems more efficiently and learn faster.",
+          "difficulty": "easy",
+          "tags": [
+            "java"
+          ],
+          "reviewCount": 0,
+          "correctCount": 0,
+          "wrongCount": 0,
+          "attempts": 0,
+          "easeFactor": 2.5,
+          "intervalDays": 1,
+          "nextReview": "2026-04-18T08:28:23.067Z",
+          "lastReviewed": null,
+          "userId": "guest"
+        },
+        {
+          "id": "vfrq9d61",
+          "question": "What is java?",
+          "answer": "java is a concept that helps you understand the essential components of java.",
+          "difficulty": "medium",
+          "tags": [
+            "java"
+          ],
+          "reviewCount": 0,
+          "correctCount": 0,
+          "wrongCount": 0,
+          "attempts": 0,
+          "easeFactor": 2.5,
+          "intervalDays": 1,
+          "nextReview": "2026-04-18T08:30:44.040Z",
+          "lastReviewed": null,
+          "userId": "guest"
+        },
+        {
+          "id": "xu4vyor2",
+          "question": "How do you apply java in practice?",
+          "answer": "You apply java by breaking it down into practical steps and testing each part separately.",
+          "difficulty": "hard",
+          "tags": [
+            "java"
+          ],
+          "reviewCount": 0,
+          "correctCount": 0,
+          "wrongCount": 0,
+          "attempts": 0,
+          "easeFactor": 2.5,
+          "intervalDays": 1,
+          "nextReview": "2026-04-18T08:30:44.040Z",
+          "lastReviewed": null,
+          "userId": "guest"
+        },
+        {
+          "id": "lo0bavsl",
+          "question": "Why is java important?",
+          "answer": "java is important because it helps you solve problems more efficiently and learn faster.",
+          "difficulty": "easy",
+          "tags": [
+            "java"
+          ],
+          "reviewCount": 0,
+          "correctCount": 0,
+          "wrongCount": 0,
+          "attempts": 0,
+          "easeFactor": 2.5,
+          "intervalDays": 1,
+          "nextReview": "2026-04-18T08:30:44.040Z",
+          "lastReviewed": null,
+          "userId": "guest"
+        }
+      ]
+    },
+    {
+      "id": "re7usqgu",
+      "name": "Daya",
+      "description": "Hello",
+      "userId": "a1ckssk8",
+      "cards": [
+        {
+          "id": "sot8n783",
+          "question": "Why is Python important?",
+          "answer": "Python is important because it helps you solve problems more efficiently and learn faster.",
+          "difficulty": "easy",
+          "tags": [
+            "Python"
+          ],
+          "reviewCount": 1,
+          "correctCount": 1,
+          "wrongCount": 0,
+          "attempts": 1,
+          "easeFactor": 2.45,
+          "intervalDays": 1,
+          "nextReview": "2026-04-19T08:38:29.319Z",
+          "lastReviewed": "2026-04-18T08:38:29.319Z",
+          "userId": "a1ckssk8"
+        },
+        {
+          "id": "knzbltd0",
+          "question": "What is Python?",
+          "answer": "Python is a concept that helps you understand the essential components of Python.",
+          "difficulty": "medium",
+          "tags": [
+            "Python"
+          ],
+          "reviewCount": 1,
+          "correctCount": 1,
+          "wrongCount": 0,
+          "attempts": 1,
+          "easeFactor": 2.65,
+          "intervalDays": 3,
+          "nextReview": "2026-04-21T08:38:30.119Z",
+          "lastReviewed": "2026-04-18T08:38:30.119Z",
+          "userId": "a1ckssk8"
+        },
+        {
+          "id": "8pyqlv07",
+          "question": "How do you apply Python in practice?",
+          "answer": "You apply Python by breaking it down into practical steps and testing each part separately.",
+          "difficulty": "hard",
+          "tags": [
+            "Python"
+          ],
+          "reviewCount": 1,
+          "correctCount": 1,
+          "wrongCount": 0,
+          "attempts": 1,
+          "easeFactor": 2.45,
+          "intervalDays": 1,
+          "nextReview": "2026-04-19T08:38:34.036Z",
+          "lastReviewed": "2026-04-18T08:38:34.036Z",
+          "userId": "a1ckssk8"
+        },
+        {
+          "id": "sm2o63t1",
+          "question": "Why is Python important?",
+          "answer": "Python is important because it helps you solve problems more efficiently and learn faster.",
+          "difficulty": "easy",
+          "tags": [
+            "Python"
+          ],
+          "reviewCount": 0,
+          "correctCount": 0,
+          "wrongCount": 0,
+          "attempts": 0,
+          "easeFactor": 2.5,
+          "intervalDays": 1,
+          "nextReview": "2026-04-18T08:17:09.578Z",
+          "lastReviewed": null,
+          "userId": "a1ckssk8"
+        },
+        {
+          "id": "t05bi8pf",
+          "question": "What is java?",
+          "answer": "java is a concept that helps you understand the essential components of java.",
+          "difficulty": "medium",
+          "tags": [
+            "java"
+          ],
+          "reviewCount": 0,
+          "correctCount": 0,
+          "wrongCount": 0,
+          "attempts": 0,
+          "easeFactor": 2.5,
+          "intervalDays": 1,
+          "nextReview": "2026-04-18T08:19:47.296Z",
+          "lastReviewed": null,
+          "userId": "a1ckssk8"
+        },
+        {
+          "id": "ucvkur94",
+          "question": "How do you apply java in practice?",
+          "answer": "You apply java by breaking it down into practical steps and testing each part separately.",
+          "difficulty": "hard",
+          "tags": [
+            "java"
+          ],
+          "reviewCount": 0,
+          "correctCount": 0,
+          "wrongCount": 0,
+          "attempts": 0,
+          "easeFactor": 2.5,
+          "intervalDays": 1,
+          "nextReview": "2026-04-18T08:19:47.297Z",
+          "lastReviewed": null,
+          "userId": "a1ckssk8"
+        },
+        {
+          "id": "xtfdbvzt",
+          "question": "Why is java important?",
+          "answer": "java is important because it helps you solve problems more efficiently and learn faster.",
+          "difficulty": "easy",
+          "tags": [
+            "java"
+          ],
+          "reviewCount": 0,
+          "correctCount": 0,
+          "wrongCount": 0,
+          "attempts": 0,
+          "easeFactor": 2.5,
+          "intervalDays": 1,
+          "nextReview": "2026-04-18T08:19:47.298Z",
+          "lastReviewed": null,
+          "userId": "a1ckssk8"
+        },
+        {
+          "id": "vvubq4sq",
+          "question": "What is java?",
+          "answer": "java is a concept that helps you understand the essential components of java.",
+          "difficulty": "medium",
+          "tags": [
+            "java"
+          ],
+          "reviewCount": 0,
+          "correctCount": 0,
+          "wrongCount": 0,
+          "attempts": 0,
+          "easeFactor": 2.5,
+          "intervalDays": 1,
+          "nextReview": "2026-04-18T08:34:31.934Z",
+          "lastReviewed": null,
+          "userId": "a1ckssk8"
+        },
+        {
+          "id": "8zzesbbe",
+          "question": "How do you apply java in practice?",
+          "answer": "You apply java by breaking it down into practical steps and testing each part separately.",
+          "difficulty": "hard",
+          "tags": [
+            "java"
+          ],
+          "reviewCount": 0,
+          "correctCount": 0,
+          "wrongCount": 0,
+          "attempts": 0,
+          "easeFactor": 2.5,
+          "intervalDays": 1,
+          "nextReview": "2026-04-18T08:34:31.935Z",
+          "lastReviewed": null,
+          "userId": "a1ckssk8"
+        },
+        {
+          "id": "t94a6msv",
+          "question": "Why is java important?",
+          "answer": "java is important because it helps you solve problems more efficiently and learn faster.",
+          "difficulty": "easy",
+          "tags": [
+            "java"
+          ],
+          "reviewCount": 0,
+          "correctCount": 0,
+          "wrongCount": 0,
+          "attempts": 0,
+          "easeFactor": 2.5,
+          "intervalDays": 1,
+          "nextReview": "2026-04-18T08:34:31.935Z",
+          "lastReviewed": null,
+          "userId": "a1ckssk8"
+        },
+        {
+          "id": "ubhhbcrn",
+          "question": "What is Python?",
+          "answer": "Python is a concept that helps you understand the essential components of Python.",
+          "difficulty": "medium",
+          "tags": [
+            "Python"
+          ],
+          "reviewCount": 0,
+          "correctCount": 0,
+          "wrongCount": 0,
+          "attempts": 0,
+          "easeFactor": 2.5,
+          "intervalDays": 1,
+          "nextReview": "2026-04-18T08:36:29.786Z",
+          "lastReviewed": null,
+          "userId": "a1ckssk8"
+        },
+        {
+          "id": "qtr1gtpx",
+          "question": "How do you apply Python in practice?",
+          "answer": "You apply Python by breaking it down into practical steps and testing each part separately.",
+          "difficulty": "hard",
+          "tags": [
+            "Python"
+          ],
+          "reviewCount": 0,
+          "correctCount": 0,
+          "wrongCount": 0,
+          "attempts": 0,
+          "easeFactor": 2.5,
+          "intervalDays": 1,
+          "nextReview": "2026-04-18T08:36:29.787Z",
+          "lastReviewed": null,
+          "userId": "a1ckssk8"
+        },
+        {
+          "id": "uljui90e",
+          "question": "Why is Python important?",
+          "answer": "Python is important because it helps you solve problems more efficiently and learn faster.",
+          "difficulty": "easy",
+          "tags": [
+            "Python"
+          ],
+          "reviewCount": 0,
+          "correctCount": 0,
+          "wrongCount": 0,
+          "attempts": 0,
+          "easeFactor": 2.5,
+          "intervalDays": 1,
+          "nextReview": "2026-04-18T08:36:29.787Z",
+          "lastReviewed": null,
+          "userId": "a1ckssk8"
+        },
+        {
+          "id": "1jj7363o",
+          "question": "What is java?",
+          "answer": "java is a concept that helps you understand the essential components of java.",
+          "difficulty": "medium",
+          "tags": [
+            "java"
+          ],
+          "reviewCount": 0,
+          "correctCount": 0,
+          "wrongCount": 0,
+          "attempts": 0,
+          "easeFactor": 2.5,
+          "intervalDays": 1,
+          "nextReview": "2026-04-18T08:38:05.774Z",
+          "lastReviewed": null,
+          "userId": "a1ckssk8"
+        },
+        {
+          "id": "96su17vr",
+          "question": "How do you apply java in practice?",
+          "answer": "You apply java by breaking it down into practical steps and testing each part separately.",
+          "difficulty": "hard",
+          "tags": [
+            "java"
+          ],
+          "reviewCount": 0,
+          "correctCount": 0,
+          "wrongCount": 0,
+          "attempts": 0,
+          "easeFactor": 2.5,
+          "intervalDays": 1,
+          "nextReview": "2026-04-18T08:38:05.774Z",
+          "lastReviewed": null,
+          "userId": "a1ckssk8"
+        },
+        {
+          "id": "9okvc9wn",
+          "question": "Why is java important?",
+          "answer": "java is important because it helps you solve problems more efficiently and learn faster.",
+          "difficulty": "easy",
+          "tags": [
+            "java"
+          ],
+          "reviewCount": 0,
+          "correctCount": 0,
+          "wrongCount": 0,
+          "attempts": 0,
+          "easeFactor": 2.5,
+          "intervalDays": 1,
+          "nextReview": "2026-04-18T08:38:05.775Z",
+          "lastReviewed": null,
+          "userId": "a1ckssk8"
+        }
+      ]
+    },
+    {
+      "id": "5h8m4yup",
+      "name": "rohan",
+      "description": "hello",
+      "userId": "a1ckssk8",
+      "cards": []
+    }
+  ],
+  "users": [
+    {
+      "id": "a1ckssk8",
+      "email": "daya63shankar@gmail.com",
+      "password": "123456"
+    }
+  ]
+}

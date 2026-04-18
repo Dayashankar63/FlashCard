@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flashcard App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>Flashcards</h1>
+        <button id="addDeckButton">+ Add deck</button>
+      </div>
+      <div id="decksList" class="list"></div>
+    </aside>
+
+    <main class="content">
+      <section class="panel" id="deckDetails">
+        <div class="panel-header">
+          <div>
+            <h2 id="deckTitle">Select a deck</h2>
+            <p id="deckDescription">Choose or create a deck to manage cards.</p>
+          </div>
+          <div class="panel-actions">
+            <span id="userGreeting" class="user-greeting">Guest</span>
+            <button id="loginButton" class="secondary">Login / Signup</button>
+            <button id="toggleStudyModeButton" class="secondary" disabled>Start study</button>
+            <button id="editDeckButton" class="secondary" disabled>Edit deck</button>
+            <button id="deleteDeckButton" class="danger" disabled>Delete deck</button>
+          </div>
+        </div>
+
+        <div class="panel-meta">
+          <div id="deckStats" class="deck-stats">No deck selected.</div>
+          <div class="tool-grid">
+            <div class="tool">
+              <label>AI topic</label>
+              <div class="tool-row">
+                <input id="topicInput" type="text" placeholder="React Hooks" />
+                <button id="generateTopicButton" class="secondary">Generate</button>
+              </div>
+            </div>
+            <div class="tool">
+              <label>Difficulty filter</label>
+              <select id="difficultyFilter">
+                <option value="">All</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+              </select>
+            </div>
+            <div class="tool">
+              <label>Tag filter</label>
+              <select id="tagFilter">
+                <option value="">All tags</option>
+              </select>
+            </div>
+            <div class="tool actions-grid">
+              <button id="showAnalyticsButton" class="secondary" disabled>Analytics</button>
+              <button id="startQuizButton" class="secondary" disabled>Quiz Mode</button>
+              <button id="dailyChallengeButton" class="secondary" disabled>Daily Challenge</button>
+            </div>
+          </div>
+          <input id="searchInput" class="search-input" type="search" placeholder="Search cards, tags or difficulty" disabled />
+        </div>
+
+        <div id="studyPanel" class="study-panel hidden">
+          <div class="study-card" id="studyCard">
+            <div class="study-card-header">
+              <div>
+                <span id="studyCardMeta">Card 0 of 0</span>
+                <span id="studyCardDifficulty" class="tag"></span>
+              </div>
+              <div class="study-loop">
+                <button id="flipStudyButton" class="secondary">Flip card</button>
+                <button id="voiceAnswerButton" class="secondary">Voice answer</button>
+              </div>
+            </div>
+
+            <div class="study-card-body">
+              <div class="face front-face">
+                <p class="label">Question</p>
+                <p id="studyQuestion" class="study-text"></p>
+              </div>
+              <div class="face back-face">
+                <p class="label">Answer</p>
+                <p id="studyAnswer" class="study-text answer"></p>
+              </div>
+            </div>
+
+            <div class="study-controls">
+              <button id="markEasyButton" class="secondary">Easy</button>
+              <button id="markMediumButton" class="secondary">Medium</button>
+              <button id="markHardButton" class="danger">Hard</button>
+            </div>
+            <div class="study-notes">
+              <button id="explainAnswerButton" class="secondary">Explain answer</button>
+              <span id="voiceResultText" class="muted"></span>
+            </div>
+            <div id="explanationText" class="explanation-text hidden"></div>
+            <div class="study-actions">
+              <button id="prevStudyButton" class="secondary">Previous</button>
+              <button id="nextStudyButton" class="secondary">Next</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards-section">
+          <h3>Cards</h3>
+          <div id="cardsList" class="cards-grid"></div>
+        </div>
+
+        <div id="analyticsPanel" class="analytics-panel hidden">
+          <div class="panel-heading">
+            <h3>Analytics Dashboard</h3>
+            <button id="closeAnalyticsButton" class="secondary">Close</button>
+          </div>
+          <div class="analytics-grid">
+            <div class="analytics-card">
+              <span>Accuracy</span>
+              <strong id="accuracyValue">0%</strong>
+            </div>
+            <div class="analytics-card">
+              <span>Total attempts</span>
+              <strong id="attemptsValue">0</strong>
+            </div>
+            <div class="analytics-card">
+              <span>Daily due</span>
+              <strong id="dueValue">0</strong>
+            </div>
+            <div class="analytics-card">
+              <span>Weak topics</span>
+              <strong id="weakTopicsValue">None</strong>
+            </div>
+          </div>
+          <canvas id="analyticsChart" width="600" height="280"></canvas>
+        </div>
+
+        <div id="quizPanel" class="quiz-panel hidden">
+          <div class="quiz-card">
+            <div class="panel-heading">
+              <h3>Quiz Mode</h3>
+              <button id="exitQuizButton" class="secondary">Exit quiz</button>
+            </div>
+            <div class="quiz-meta">
+              <span id="quizProgress">0 / 0</span>
+              <span id="quizTimer">30s</span>
+            </div>
+            <p id="quizQuestionText" class="quiz-question"></p>
+            <div id="quizOptions" class="quiz-options"></div>
+            <div class="quiz-actions">
+              <button id="submitQuizButton">Submit answer</button>
+            </div>
+            <div id="quizResult" class="quiz-result hidden"></div>
+          </div>
+        </div>
+
+        <form id="cardForm" class="form-card">
+          <h3>Create new card</h3>
+          <label>Question</label>
+          <textarea id="cardQuestion" rows="3" placeholder="Write a question"></textarea>
+          <label>Answer</label>
+          <textarea id="cardAnswer" rows="3" placeholder="Write the answer"></textarea>
+          <div class="form-row">
+            <div>
+              <label>Difficulty</label>
+              <select id="cardDifficulty">
+                <option value="easy">Easy</option>
+                <option value="medium" selected>Medium</option>
+                <option value="hard">Hard</option>
+              </select>
+            </div>
+            <div>
+              <label>Tags</label>
+              <input id="cardTags" type="text" placeholder="comma separated" />
+            </div>
+          </div>
+          <button type="submit">Add card</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-panel">
+      <h2 id="modalTitle">Create Deck</h2>
+      <label>Deck name</label>
+      <input id="deckNameInput" type="text" placeholder="Enter deck name" />
+      <label>Description</label>
+      <textarea id="deckDescriptionInput" rows="3" placeholder="Deck description"></textarea>
+      <div class="modal-actions">
+        <button id="cancelModal" class="secondary">Cancel</button>
+        <button id="saveModal">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="authModal" class="modal hidden">
+    <div class="modal-panel">
+      <h2 id="authModalTitle">Login</h2>
+      <label>Email</label>
+      <input id="authEmailInput" type="email" placeholder="you@example.com" />
+      <label>Password</label>
+      <input id="authPasswordInput" type="password" placeholder="Password" />
+      <div class="modal-actions auth-actions">
+        <button id="authToggleButton" class="secondary">Switch to signup</button>
+        <button id="cancelAuthModal" class="secondary">Cancel</button>
+        <button id="saveAuthModal">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="cardEditModal" class="modal hidden">
+    <div class="modal-panel">
+      <h2 id="cardModalTitle">Edit Card</h2>
+      <label>Question</label>
+      <textarea id="cardQuestionInputEdit" rows="3" placeholder="Edit question"></textarea>
+      <label>Answer</label>
+      <textarea id="cardAnswerInputEdit" rows="3" placeholder="Edit answer"></textarea>
+      <div class="form-row">
+        <div>
+          <label>Difficulty</label>
+          <select id="cardDifficultyInputEdit">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+        <div>
+          <label>Tags</label>
+          <input id="cardTagsInputEdit" type="text" placeholder="comma separated" />
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button id="cancelCardModal" class="secondary">Cancel</button>
+        <button id="saveCardModal">Save card</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

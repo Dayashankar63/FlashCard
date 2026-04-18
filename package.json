@@ -1,0 +1,19 @@
+{
+  "name": "flashcard-backend",
+  "version": "1.0.0",
+  "description": "Simple flashcard backend API for decks and cards.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": ["flashcards", "backend", "express", "node"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
